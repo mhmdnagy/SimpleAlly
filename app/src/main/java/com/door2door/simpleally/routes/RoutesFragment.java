@@ -14,15 +14,8 @@ import com.door2door.simpleally.data.pojo.Route;
 
 import java.util.List;
 
-/**
- * A fragment representing a list of Items.
- * <p/>
- * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
- * interface.
- */
-public class RoutesFragment extends Fragment implements RoutesContract.View {
 
-    private OnListFragmentInteractionListener mListener;
+public class RoutesFragment extends Fragment implements RoutesContract.View {
 
     //UI
     RecyclerView recyclerView;
@@ -62,18 +55,6 @@ public class RoutesFragment extends Fragment implements RoutesContract.View {
         return view;
     }
 
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
     @Override
     public void onResume() {
         super.onResume();
@@ -88,17 +69,11 @@ public class RoutesFragment extends Fragment implements RoutesContract.View {
 
     @Override
     public void showRoutes(List<Route> routes) {
-        recyclerView.setAdapter(new RoutesRecyclerViewAdapter(routes, mListener, getActivity()));
+        recyclerView.setAdapter(new RoutesRecyclerViewAdapter(routes, getActivity()));
     }
 
     @Override
     public void setPresenter(RoutesContract.Presenter presenter) {
         mPresenter = presenter;
-    }
-
-
-    public interface OnListFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onListFragmentInteraction(Route item);
     }
 }
