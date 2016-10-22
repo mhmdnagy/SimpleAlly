@@ -9,4 +9,7 @@ public class Routes {
 
     public List<Route> routes = new ArrayList<Route>();
 
+    public List<Route> getRoutes() {
+        return routes;
+    }
 }

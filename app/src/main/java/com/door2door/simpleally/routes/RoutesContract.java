@@ -13,7 +13,7 @@ import java.util.List;
 public interface RoutesContract {
 
     interface View extends BaseView<Presenter> {
-        void showRoutes(List<Route> routes);
+        public void showRoutes(List<Route> routes);
     }
 
 

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.door2door.simpleally.R;
+import com.door2door.simpleally.utils.schedulers.SchedulerProvider;
 
 public class RoutesActivity extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class RoutesActivity extends AppCompatActivity {
                     .commit();
         }
 
-        mRoutesPresenter = new RoutesPresenter(fragment);
+        mRoutesPresenter = new RoutesPresenter(fragment, SchedulerProvider.getInstance());
 
     }
 }
