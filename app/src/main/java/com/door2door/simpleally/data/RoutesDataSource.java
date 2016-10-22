@@ -12,9 +12,8 @@ import com.google.gson.GsonBuilder;
 public class RoutesDataSource {
 
 
-    public Routes read(){
+    public Routes readRoutes(){
         Gson gson = new GsonBuilder().create();
-        Routes routes = gson.fromJson(RoutesJson.ROUTES_JSON, Routes.class);
-        return routes;
+        return gson.fromJson(RoutesJson.ROUTES_JSON, Routes.class);
     }
 }

@@ -8,15 +8,76 @@ import java.util.List;
 public class Segment {
 
 
-    public String name;
-    public Integer numStops;
-    public List<Stop> stops = new ArrayList<Stop>();
-    public String travelMode;
-    public Object description;
-    public String color;
-    public String iconUrl;
-    public String polyline;
+    private String name;
+    private Integer numStops;
+    private List<Stop> stops = new ArrayList<Stop>();
+    private String travelMode;
+    private Object description;
+    private String color;
+    private String icon_url;
+    private String polyline;
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public Integer getNumStops() {
+        return numStops;
+    }
+
+    public void setNumStops(Integer numStops) {
+        this.numStops = numStops;
+    }
+
+    public List<Stop> getStops() {
+        return stops;
+    }
+
+    public void setStops(List<Stop> stops) {
+        this.stops = stops;
+    }
+
+    public String getTravelMode() {
+        return travelMode;
+    }
+
+    public void setTravelMode(String travelMode) {
+        this.travelMode = travelMode;
+    }
+
+    public Object getDescription() {
+        return description;
+    }
+
+    public void setDescription(Object description) {
+        this.description = description;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getIcon_url() {
+        return icon_url;
+    }
+
+    public void setIcon_url(String icon_url) {
+        this.icon_url = icon_url;
+    }
+
+    public String getPolyline() {
+        return polyline;
+    }
+
+    public void setPolyline(String polyline) {
+        this.polyline = polyline;
+    }
 }
