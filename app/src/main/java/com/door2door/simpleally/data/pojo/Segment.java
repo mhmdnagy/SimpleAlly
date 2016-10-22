@@ -9,9 +9,9 @@ public class Segment {
 
 
     private String name;
-    private Integer numStops;
+    private Integer num_stops;
     private List<Stop> stops = new ArrayList<Stop>();
-    private String travelMode;
+    private String travel_mode;
     private Object description;
     private String color;
     private String icon_url;
@@ -26,11 +26,11 @@ public class Segment {
     }
 
     public Integer getNumStops() {
-        return numStops;
+        return num_stops;
     }
 
     public void setNumStops(Integer numStops) {
-        this.numStops = numStops;
+        this.num_stops = numStops;
     }
 
     public List<Stop> getStops() {
@@ -41,12 +41,12 @@ public class Segment {
         this.stops = stops;
     }
 
-    public String getTravelMode() {
-        return travelMode;
+    public String getTravel_mode() {
+        return travel_mode;
     }
 
-    public void setTravelMode(String travelMode) {
-        this.travelMode = travelMode;
+    public void setTravel_mode(String travel_mode) {
+        this.travel_mode = travel_mode;
     }
 
     public Object getDescription() {
